@@ -6,15 +6,15 @@
     xmlns:local="clr-namespace:FirstMaui"
     xmlns:pages="clr-namespace:FirstMaui.Pages"
     Shell.FlyoutBehavior="Disabled"
-    Title="FirstMaui">
+    Title="FirstMaui2">
 
     <TabBar>
         <Tab Title="Main"
-             Icon="dotnet_bot.svg">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+             Icon="icon1.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:List}" />
         </Tab>
         <Tab Title="Schedule"
-             Icon="dotnet_bot.svg">
+             Icon="icon2.png">
             <ShellContent ContentTemplate="{DataTemplate pages:Schedule}" />
         </Tab>
     </TabBar>
