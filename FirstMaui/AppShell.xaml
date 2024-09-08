@@ -9,13 +9,25 @@
     Title="FirstMaui2">
 
     <TabBar>
-        <Tab Title="Main"
+        <Tab Title="Home"
              Icon="icon1.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:List}" />
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
-        <Tab Title="Schedule"
+        <Tab Title="Savings"
              Icon="icon2.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:Schedule}" />
+            <ShellContent ContentTemplate="{DataTemplate pages:SavingsPage}" />
+        </Tab>
+        <Tab Title="KidsBox"
+             Icon="icon1.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:KidsboxPage}" />
+        </Tab>
+        <Tab Title="Transactions"
+             Icon="icon2.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:TransactionsPage}" />
+        </Tab>
+        <Tab Title="Settings"
+             Icon="icon2.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:SettingsPage}" />
         </Tab>
     </TabBar>
     
