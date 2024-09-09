@@ -13,6 +13,7 @@
     <ItemGroup>
         <!-- Images -->
         <MauiImage Include="Resources\Images\*"/>
+        <MauiImage Include="Resources\Images\kids\*"/>
         <MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185"/>
 
         <!-- Custom Fonts -->

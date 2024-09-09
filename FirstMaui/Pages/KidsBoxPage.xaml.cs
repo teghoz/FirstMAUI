@@ -7,9 +7,9 @@ using Microsoft.Maui.Controls;
 
 namespace FirstMaui.Pages;
 
-public partial class KidsboxPage : ContentPage
+public partial class KidsBoxPage : ContentPage
 {
-    public KidsboxPage()
+    public KidsBoxPage()
     {
         InitializeComponent();
     }
