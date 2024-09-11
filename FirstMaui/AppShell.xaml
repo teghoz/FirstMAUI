@@ -18,7 +18,7 @@
             <ShellContent ContentTemplate="{DataTemplate pages:SavingsPage}" />
         </Tab>
         <Tab Title="KidsBox"
-             Icon="kids/kids_icon_active.png">
+             Icon="icon2.png">
             <ShellContent ContentTemplate="{DataTemplate pages:KidsBoxPage}" />
         </Tab>
         <Tab Title="Transactions"

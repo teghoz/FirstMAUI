@@ -12,8 +12,8 @@
 
     <ItemGroup>
         <!-- Images -->
-        <MauiImage Include="Resources\Images\*"/>
-        <MauiImage Include="Resources\Images\kids\*"/>
+        <!-- <MauiImage Include="Resources\Images\*"/> -->
+        <MauiImage Include="Resources\Images\**\*.png" />
         <MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185"/>
 
         <!-- Custom Fonts -->
@@ -21,25 +21,13 @@
 
         <!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)"/>
+        
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <MauiXaml Update="Pages\SavingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Update="Pages\SavingsPage.xaml.cs">
-        <DependentUpon>Savings.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
     </ItemGroup>
 
 </Project>
