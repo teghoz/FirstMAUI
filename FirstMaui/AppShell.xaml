@@ -10,19 +10,19 @@
 
     <TabBar>
         <Tab Title="Home"
-             Icon="icon1.png">
+             Icon="dashboardicon.png">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
         <Tab Title="Savings"
-             Icon="icon2.png">
+             Icon="savingsactive.png">
             <ShellContent ContentTemplate="{DataTemplate pages:SavingsPage}" />
         </Tab>
         <Tab Title="KidsBox"
-             Icon="icon2.png">
+             Icon="kids/kids_icon_active.png">
             <ShellContent ContentTemplate="{DataTemplate pages:KidsBoxPage}" />
         </Tab>
         <Tab Title="Transactions"
-             Icon="icon2.png">
+             Icon="transactionsactive.png">
             <ShellContent ContentTemplate="{DataTemplate pages:TransactionsPage}" />
         </Tab>
         <Tab Title="Settings"
