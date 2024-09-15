@@ -25,9 +25,37 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="AlohaKit.Animations" Version="1.1.0" />
+        <PackageReference Include="CardsView.Maui" Version="1.0.0" />
+        <PackageReference Include="CommunityToolkit.Maui" Version="9.0.3" />
+        <PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="4.1.1" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.1" />
+        <PackageReference Include="FFImageLoading.Maui" Version="1.2.7" />
+        <PackageReference Include="LiveChartsCore.SkiaSharpView.Maui" Version="2.0.0-rc2" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="8.0.90" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+        <PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="3.0.0-preview.7" />
+        <PackageReference Include="ZXing.Net.Maui" Version="0.4.0" />
+        <PackageReference Include="ZXing.Net.Maui.Controls" Version="0.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\Translation\CashBoxResource.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>CashBoxResource.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\Translation\CashBoxResource.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CashBoxResource.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>
