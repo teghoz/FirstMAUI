@@ -9,20 +9,35 @@
     Title="FirstMaui2">
 
     <TabBar>
-        <Tab Title="Home"
-             Icon="dashboardicon.png">
+        <Tab Title="Home">
+            <Tab.Icon>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS" Value="dashboardicon_ios.png"/>
+                    <On Platform="Android" Value="dashboardicon.png"/>
+                </OnPlatform>
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
-        <Tab Title="Savings"
-             Icon="savingsactive.png">
+        <Tab Title="Savings">
+            <Tab.Icon>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS" Value="savingsactive_ios.png"/>
+                    <On Platform="Android" Value="savingsactive.png"/>
+                </OnPlatform>
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate pages:SavingsPage}" />
         </Tab>
         <Tab Title="KidsBox"
-             Icon="kids/kids_icon_active.png">
+             Icon="kids_icon_active.png">
             <ShellContent ContentTemplate="{DataTemplate pages:KidsBoxPage}" />
         </Tab>
-        <Tab Title="Transactions"
-             Icon="transactionsactive.png">
+        <Tab Title="Transactions">
+            <Tab.Icon>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS" Value="transactionsactive_ios.png"/>
+                    <On Platform="Android" Value="transactionsactive.png"/>
+                </OnPlatform>
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate pages:TransactionsPage}" />
         </Tab>
         <Tab Title="Settings"
